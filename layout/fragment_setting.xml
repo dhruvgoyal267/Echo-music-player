@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:id="@+id/settingLayout"
+        android:layout_marginTop="?android:attr/actionBarSize">
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#212121"
+            android:text="Shake to change feature"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/shakeFeatureText"
+    />
+    <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="11dp"
+            android:backgroundTint="#000000"
+            android:id="@+id/shakeSwitch"
+    />
+    <View
+            android:layout_height="0.1dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_below="@+id/shakeSwitch"
+            android:background="#bdbdbd"
+            android:id="@+id/divider"
+            android:layout_marginTop="20dp"
+    />
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#212121"
+            android:text="Dark Theme"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/darkThemeText"
+            android:layout_below="@+id/divider"
+    />
+    <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="11dp"
+            android:layout_below="@+id/divider"
+            android:backgroundTint="#000000"
+            android:id="@+id/darkThemeSwitch"
+    />
+    <View
+            android:layout_height="0.1dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_below="@+id/darkThemeSwitch"
+            android:background="#bdbdbd"
+            android:layout_marginTop="20dp"
+    />
+
+</RelativeLayout>

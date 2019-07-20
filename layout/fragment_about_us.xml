@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/aboutScreen"
+        android:clickable="true"
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/pic"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/pic"
+            android:id="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This app is developed by Dhruv Goyal
+as part of Internshala Online training project"
+            android:layout_marginLeft="150dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/name"
+            android:id="@+id/description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+    />
+    <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="20dp"
+            android:id="@+id/divider"
+            android:background="#bdbdbd"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_marginTop="30dp"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/appVersionText"
+            android:textColor="#000000"
+            android:text="App Version : 1.0"
+    />
+    <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/appVersionText"
+            android:layout_marginTop="20dp"
+            android:background="#bdbdbd"
+    />
+</RelativeLayout>
